@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.container {
+  height: 240px;
+  /* display: flex; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+}
+
+.bar {
+  border: solid 5px white;
+  width: 10px;
+}
