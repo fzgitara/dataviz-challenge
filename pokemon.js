@@ -29,7 +29,7 @@ d3.csv('pokemon.csv', function(d) {
   console.log(pokemonGen1)
 
   const colorScale = d3.scaleLinear()
-    .domain([0, 75])
+    .domain([0, 85])
     .range(['red', 'green'])
   
   const svg = d3.select('.container').append('svg')
@@ -57,7 +57,7 @@ d3.csv('pokemon.csv', function(d) {
     .attr('height', d => {
       return d.HP
     })
-    .attr('fill', (d) => {
+    .attr('fill', d => {
       return colorScale(d.HP)
     })
 })
